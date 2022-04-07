@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Eric Lucas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-01 08:41:42 "/>
+        <attribute name="created" value="RXJpYyBMdWNhcztFUklDX1BDWkFPOzIwMjEtMTEtMzA7IjEwOjA2OjAxICI7Mjg2Mw=="/>
+        <attribute name="edited" value="RXJpYyBMdWNhcztFUklDX1BDWkFPOzIwMjEtMTItMDE7IjA4OjQxOjQyICI7MjsyOTgy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <output expression="media" newline="True"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;Boa, garoto!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;S&#243; lamento pra voc&#234;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
